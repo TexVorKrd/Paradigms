@@ -1,0 +1,6 @@
+sum([], 0).
+sum([Elem|Tail], TotalSum) :-
+    sum(Elem, ElemSum),
+    sum(Tail, TailSum),
+    TotalSum is ElemSum + TailSum.
+sum(Num, Num).
